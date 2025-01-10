@@ -1,13 +1,11 @@
-'use client'
+"use client";
 
-import { composeStory } from '@storybook/react';
+import { composeStories } from "@storybook/react";
+
+import * as stories from "../../../packages/canon/src/Button/Button.stories";
 
 export default function Home() {
-  console.log('composeStory', composeStory);
+  const { Variants } = composeStories(stories);
 
-  return (
-    <main>
-      Hello
-    </main>
-  );
+  return <Variants />;
 }
