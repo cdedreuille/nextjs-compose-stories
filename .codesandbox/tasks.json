@@ -20,13 +20,6 @@
       "preview": {
         "port": 3000
       }
-    },
-    "install": {
-      "name": "Install Dependencies",
-      "command": "yarn install",
-      "restartOn": {
-        "files": ["./package.json"]
-      }
     }
   }
 }
