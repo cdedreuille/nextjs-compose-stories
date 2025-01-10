@@ -8,8 +8,8 @@
     },
     "workspaces": {
         "packages": [
-        "packages/*",
-        "plugins/*"
+            "packages/*",
+            "plugins/*"
         ]
     },
     "packageManager": "yarn@3.8.1",
