@@ -2,8 +2,12 @@
   // These tasks will run in order when initializing your CodeSandbox project.
   "setupTasks": [
     {
-      "name": "Install Dependencies",
-      "command": "pnpm install"
+      "name": "Install Root Dependencies",
+      "command": "yarn install"
+    },
+    {
+      "name": "Install Website Dependencies",
+      "command": "cd website && yarn install"
     }
   ],
 
@@ -11,33 +15,15 @@
   "tasks": {
     "dev": {
       "name": "Start Dev Server",
-      "command": "pnpm run dev",
+      "command": "yarn dev",
       "runAtStart": true,
       "preview": {
         "port": 3000
-      },
-      "restartOn": {
-        "files": ["./pnpm-lock.yaml"]
       }
-    },
-    "build": {
-      "name": "Build",
-      "command": "pnpm run build",
-      "runAtStart": false
-    },
-    "start": {
-      "name": "Start Server",
-      "command": "pnpm run start",
-      "runAtStart": false
-    },
-    "lint": {
-      "name": "Lint",
-      "command": "pnpm run lint",
-      "runAtStart": false
     },
     "install": {
       "name": "Install Dependencies",
-      "command": "pnpm install",
+      "command": "yarn install",
       "restartOn": {
         "files": ["./package.json"]
       }
