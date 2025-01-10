@@ -27,21 +27,13 @@
         "dist"
     ],
     "scripts": {
-        "build": "backstage-cli package build",
-        "build-storybook": "storybook build",
-        "clean": "backstage-cli package clean",
-        "lint": "backstage-cli package lint",
-        "prepack": "backstage-cli package prepack",
-        "postpack": "backstage-cli package postpack",
-        "start": "storybook dev -p 6006",
-        "test": "backstage-cli package test"
+        "start": "storybook dev -p 6006"
     },
     "dependencies": {
         "@base-ui-components/react": "^1.0.0-alpha.4",
         "@remixicon/react": "^4.5.0"
     },
     "devDependencies": {
-        "@backstage/cli": "^0.29.4",
         "@chromatic-com/storybook": "^3.2.2",
         "@storybook/addon-essentials": "^8.4.7",
         "@storybook/addon-interactions": "^8.4.7",
